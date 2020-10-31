@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css"> 
+    <title>Side Hustle Calculator App</title>
+
+</head>
+<body>
+    <nav >
+        <div class="container">
+        <div class="logo">
+<img src="./logo.png" alt="">
+        </div>
+        <h3>
+            SALARY CALCULATOR
+        </h3>
+    </div>
+    </nav>
+
+<div class="container main-box">
+    <main>
+    <form class="form">
+        <div class="form-group">
+            <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter Your Full Name">
+                
+            </div>
+
+            <label for="work-hour">Main Hour work</label>
+            <input type="number" class="form-control" id="work-hour" placeholder="Enter hour Of Work not more than 4 hrs">
+            
+        </div>
+        <div class="form-group">
+            <label for="extra-time">Extra Hour</label>
+            <input type="number" class="form-control" id="extra-time" placeholder="Enter Extra Work Hour Not More Than 19 hrs">
+        </div>
+<div>
+    <button id="submit" type="button">
+        calculate
+        </button>
+
+    </div>
+    </form>
+
+    <div id="result">
+        <ul class="list-group">
+            <li class="top">Payment Due</li>
+            <li id="hour-pay-result" class="list-group-item">Total Hour Pay:</li>
+            <li id="extra-pay-result" class="list-group-item">Extra Pay:</li>
+            <li id="total-payment-result" class="list-group-item">Total Salary:</li>
+        </ul>
+        </div>
+
+
+    </main>
+    <div>
+        <p id="final-text">
+    
+        </p>
+    </div>
+</div>
+    
+</body>
+<script src="./app.js"></script>
+</html>
