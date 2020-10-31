@@ -23,9 +23,8 @@ console.log(fname);
 return 'You cant work for more than four hours'
         //step 6 the calculation of hour and salary
     } else {
-        hour  = (hour*1000)
-        salary = hour*30
-        status = true
+        salary  = (hour*1000)
+       // salary = hour*30
         console.log(salary);}
 
 // overtime calculation
@@ -39,8 +38,8 @@ return 'Enter A Number'
         totalSalary = 'Extra Hour Per day can not be above 19 hours'
 //return 'Extra Hour Per day can not be above 19 '
     } else{
-        xtrahour  = (xtrahour*200)
-        overtime = xtrahour*30
+        overtime = (xtrahour*200)
+        //overtime = xtrahour*30
         console.log(overtime);
     
     }
@@ -52,7 +51,7 @@ return 'Enter A Number'
     document.querySelector('#hour-pay-result').textContent = ` Total Hour Pay: #${salary} `
     document.querySelector('#extra-pay-result').textContent = ` Extra Pay: #${overtime}`
     document.querySelector('#total-payment-result').textContent = ` Total Salary: #${totalSalary}`
-    document.querySelector('#final-text').textContent = `${fname} Thanks and have a nice day.`
+    document.querySelector('#final-text').textContent = `${fname} Thanks For using our app and have a nice day.`
 
 })
 
